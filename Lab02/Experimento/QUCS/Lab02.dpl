@@ -1,0 +1,43 @@
+<QucsStudio Schematic 2.5.7>
+<Properties>
+  <View=0,0,1057,630,1.3967,20,0>
+  <Grid=10,10,0>
+  <DataSet=Lab02.dat>
+  <DataDisplay=Lab02.sch>
+  <OpenDisplay=1>
+  <showFrame=0>
+  <FrameText0=Title>
+  <FrameText1=Drawn By:>
+  <FrameText2=Date:>
+  <FrameText3=Revision:>
+</Properties>
+<Symbol>
+</Symbol>
+<Components>
+</Components>
+<Wires>
+</Wires>
+<Diagrams>
+  <Smith 360 220 200 200 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 "" "" "">
+	<Legend 10 -100 0>
+	<"S[2,2]" #ff0000 0 3 0 0 0 0 "">
+	  <Mkr 9.97012e+08 170 -20 3 1 0>
+  </Smith>
+  <Polar 90 470 200 200 3 #c0c0c0 1 00 1 0 1 1 1 0 0.5 1 1 0 1 1 315 0 225 "" "" "">
+	<Legend 10 -100 0>
+	<"S[1,2]" #ff0000 0 3 0 0 0 0 "">
+	  <Mkr 9.97012e+08 160 -220 3 1 0>
+  </Polar>
+  <Smith 90 220 200 200 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 "" "" "">
+	<Legend 10 -100 0>
+	<"S[1,1]" #ff0000 0 3 0 0 0 0 "">
+	  <Mkr 9.97012e+08 160 -20 3 1 0>
+  </Smith>
+  <Polar 350 470 200 200 3 #c0c0c0 1 00 1 0 1 1 1 0 0.5 1 1 0 1 1 315 0 225 "" "" "">
+	<Legend 10 -100 0>
+	<"S[2,1]" #ff0000 0 3 0 0 0 0 "">
+	  <Mkr 1.00902e+09 180 -220 3 1 0>
+  </Polar>
+</Diagrams>
+<Paintings>
+</Paintings>

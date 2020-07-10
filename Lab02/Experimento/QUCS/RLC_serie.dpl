@@ -1,0 +1,29 @@
+<QucsStudio Schematic 2.5.7>
+<Properties>
+  <View=0,0,800,800,1,0,0>
+  <Grid=10,10,0>
+  <DataSet=RLC_serie.dat>
+  <DataDisplay=RLC_serie.sch>
+  <OpenDisplay=1>
+  <showFrame=0>
+  <FrameText0=Title>
+  <FrameText1=Drawn By:>
+  <FrameText2=Date:>
+  <FrameText3=Revision:>
+</Properties>
+<Symbol>
+</Symbol>
+<Components>
+</Components>
+<Wires>
+</Wires>
+<Diagrams>
+  <Smith 210 310 220 220 3 #c0c0c0 1 00 1 0 1 1 1 0 4 1 1 0 1 1 315 0 225 "" "" "">
+	<Legend 10 -100 0>
+	<"S[1,1]" #0000ff 3 3 0 0 0 0 "">
+	  <Mkr 5e+10 270 -200 3 1 0>
+	  <Mkr 7.2272e+07 290 -80 3 1 0>
+  </Smith>
+</Diagrams>
+<Paintings>
+</Paintings>
