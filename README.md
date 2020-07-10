@@ -13,7 +13,7 @@ Material dos experimentos utilizando o processamento de **Python**, e **QUCS**.
 ## Atualizações
 
 - [x] Lab 01
-- [ ] Lab 02
+- [x] Lab 02
 - [ ] Lab 03
 - [ ] Lab 04
 - [ ] Lab 05
