@@ -1,6 +1,6 @@
 # Radio Frequency
 
-### The steps to deal with noise for :
+### The steps to deal with noise:
 
 [Leaning Noise](Radio%20Frequency%2036daa4db3f464d88bcfcda93dfee5800/Leaning%20Noise%2084746808d9fb4a53b7ef949079765b53.md)
 
