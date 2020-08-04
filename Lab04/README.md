@@ -7,9 +7,6 @@
 ## Lab04
 
 - [x]  Calcular Ruído
-
-[Como calcular o valor teórico do experimento 3R?](Radio%20Frequency%2036daa4db3f464d88bcfcda93dfee5800/Como%20calcular%20o%20valor%20teo%CC%81rico%20do%20experimento%203R%2048b002659b084ea8ad4be8d529c73454.md)
-
 - [ ]  Cálculo Fígura de Ruído
 - [ ]  Quesions:
     - [ ]  Question 1
