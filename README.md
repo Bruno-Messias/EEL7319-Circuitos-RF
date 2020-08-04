@@ -14,7 +14,7 @@ Material dos experimentos utilizando o processamento de **Python**, e **QUCS**.
 
 - [x] Lab 01
 - [x] Lab 02
-- [ ] Lab 03
+- [x] Lab 03
 - [ ] Lab 04
 - [ ] Lab 05
 - [ ] Lab 06
