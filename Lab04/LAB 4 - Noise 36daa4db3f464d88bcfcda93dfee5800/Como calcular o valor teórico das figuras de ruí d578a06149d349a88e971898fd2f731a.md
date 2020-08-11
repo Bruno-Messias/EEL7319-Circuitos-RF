@@ -4,8 +4,6 @@
 
 [figura de ruido paralelo_1.jpg](https://drive.google.com/file/d/1sFDQq_Hw5Pj63WmEvLc6hCeT2_7tRzYy/view?usp=drivesdk)
 
-[figura de ruido paralelo_1.jpg](https://drive.google.com/file/d/1sFDQq_Hw5Pj63WmEvLc6hCeT2_7tRzYy/view?usp=drivesdk)
-
 [figura de ruido paralelo_2.jpg](https://drive.google.com/file/d/1sGQzvhE0L0pnH9xOA7qRHCp9OWrasIaW/view?usp=drivesdk)
 
 ## Atenuador
