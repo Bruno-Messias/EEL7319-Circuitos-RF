@@ -1,18 +1,22 @@
-# Radio Frequency
+# LAB 4 - Noise
 
-### The steps to deal with noise:
-
-[Leaning Noise](Radio%20Frequency%2036daa4db3f464d88bcfcda93dfee5800/Leaning%20Noise%2084746808d9fb4a53b7ef949079765b53.md)
+[Leaning Noise](LAB%204%20-%20Noise%2036daa4db3f464d88bcfcda93dfee5800/Leaning%20Noise%2084746808d9fb4a53b7ef949079765b53.md)
 
 ## Lab04
 
 - [x]  Calcular Ruído
-- [ ]  Cálculo Fígura de Ruído
-- [ ]  Quesions:
-    - [ ]  Question 1
+
+[Como calcular o valor teórico 3R do experimento ?](LAB%204%20-%20Noise%2036daa4db3f464d88bcfcda93dfee5800/Como%20calcular%20o%20valor%20teo%CC%81rico%203R%20do%20experimento%2048b002659b084ea8ad4be8d529c73454.md)
+
+- [x]  Cálculo Figura de Ruído
+- [x]  Quesions:
+    - [x]  Question 1
+
+    [Como calcular o valor teórico das figuras de ruído?](LAB%204%20-%20Noise%2036daa4db3f464d88bcfcda93dfee5800/Como%20calcular%20o%20valor%20teo%CC%81rico%20das%20figuras%20de%20rui%CC%81%20d578a06149d349a88e971898fd2f731a.md)
+
     - [x]  Question 2
     - [x]  Question 3
-    - [ ]  Question 4 → em desenvolvimento paralelo
+    - [x]  Question 4 → em desenvolvimento paralelo
     - [x]  Question 5
 
 **Pesquisas**:
