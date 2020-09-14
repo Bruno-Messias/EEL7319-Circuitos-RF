@@ -1,0 +1,6 @@
+http://qucs.sourceforge.net/tech/node98.html
+https://www.rfcafe.com/references/electrical/s-h-y-z.htm
+artigo das tabelas de conversão
+livro rf dsesign
+links no lab
+F. Caspers, RF engineering basic concepts: S-parameters, CAS Proc., 2010, CERN Yellow ReportCERN-2011-007, pp. 67-93.

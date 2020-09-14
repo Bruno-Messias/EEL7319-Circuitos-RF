@@ -1,0 +1,284 @@
+\documentclass[a4paper,12pt]{proc}
+
+\usepackage[margin=.5in]{geometry}  
+\usepackage[portuguese]{babel} 
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{mwe}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{mathtools}
+
+%\singlespacing Para um espaçamento simples
+%\onehalfspacing Para um espaçamento de 1,5
+%\doublespacing Para um espaçamento duplo
+
+\graphicspath{{images/}}
+
+\title{Relatório Experimento 04:}
+\author{Bruno C. Messias}
+\date{Agosto 2020}
+
+\begin{document}
+
+\maketitle
+
+\section{Introdução}
+
+Este relatório é referente ao experimento 04 da matéria EEL7319(Circuitos RF), sobre o tema de Figura de Ruído em circuitos RF, que possui o objetivo de avaliar o comportamento dos componentes em aplicações de RF, considerando os efeitos de ruído no sistema.
+Foi utilizado o software \textit{QUCS} para o desenvolvimento e obtenção dos resultados considerando o ruído.
+
+\section{Parte Experimental}
+
+\subsection{Análise de Ruído}
+A seguir vamos calcular as tensões de ruido de resistores \textit{(vout.vn)}, as densidade espectral de potência \textit{(Sp)} e também a potência de ruído para uma banda de $10MHz$ \textit{($Sp~band$)}, para diversas configurações de resistores e temperatura, representados pelas Figuras \ref{ruido290} e \ref{ruido297}.
+\begin{itemize}
+    \item i) R1 = R2 = 50 $\Omega$ e T1 = 290K
+    \item ii) R1 = R2 = 50 $\Omega$ e T1 = 297.15K
+\end{itemize}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=.38]{ruido290k.png}
+    \caption{Análise de ruído para T = 290K}
+    \label{ruido290}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=.38]{ruido297k.png}
+    \caption{Análise de ruído para T = 297.15K}
+    \label{ruido297}
+\end{figure}
+
+\noindent Temos também a comparações com os valores teóricos \textit{($vout~teo$)} utilizando as equações no próprio \textit{QUCS} representados nas FIguras \ref{ruido290teo} e \ref{ruido297teo}.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=.38]{ruido290k_teo.png}
+    \caption{Comparação teórica T = 290K}
+    \label{ruido290teo}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=.38]{ruido297k_teo.png}
+    \caption{Comparação teórica T = 297.15K}
+    \label{ruido297teo}
+\end{figure}
+
+\noindent Como também iremos analisar o caso onde $R2=3R1$ na Figura \ref{3rteo}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=.38]{ruido3R.png}
+    \caption{Análise da tensão de ruído para R2=3R1}
+    \label{3rteo}
+\end{figure}
+
+\subsection{Análise das Figuras de Ruído}
+
+\subsubsection{Projeto Circuito Proposto}
+Temos a seguir o circuito proposto para a obtenção das figuras de ruído, representado na Figura \ref{cir_figura}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.38]{figura_cir.png}
+    \caption{Circuito proposta para o cálculo da Figura de Ruído}
+    \label{cir_figura}
+\end{figure}
+
+\noindent Para cada elemento calculamos os seguintes parâmetros:
+
+\begin{itemize}
+    \item Potência Disponível na font(\textit{Si});
+    \item Potência Disponível do circuito(\textit{So});
+    \item Potência de ruído Disponível na entrada(\textit{Ni});
+    \item Potência de ruído Disponível na saída(\textit{No});
+    \item Ganho de Potência(\textit{G});
+    \item Figura de Ruído(\textit{F})
+\end{itemize}
+
+\noindent Temos a seguir o cálculo das figuras de ruído para duas configurações de resistores, com os resultados nas Figuras \ref{figura_serie} e \ref{figura_paralelo}, acompanhados de seus valores teóricos para comparação.
+
+\begin{itemize}
+    \item Rs = 120 $\Omega$ e T = $30^{\circ}$
+    \item Rp = 60 $\Omega$ e T = $27^{\circ}$
+\end{itemize}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=.28]{figura_serie.png}
+    \caption{Resultados para o resistor em série}
+    \label{figura_serie}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=.28]{figura_paralelo.png}
+    \caption{Resultados para o resistor em série}
+    \label{figura_paralelo}
+\end{figure}
+
+\noindent Também foi analisado o seguinte atenuador projetado para uma atenuação de $10dB$ para uma resistência de referência de $75\Omega$, representado na Figura \ref{atenuador}, com sua análise em \ref{figura_atenuador}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=.5]{atenuador.png}
+    \caption{Atenuador projetado para 10dB}
+    \label{atenuador}
+\end{figure}
+
+\noindent Temos também a análise de sua Figura de Ruído na Figura \ref{figura_atenuador}.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.241]{figura_atenuador.png}
+    \caption{Parâmetros do Atenuador}
+    \label{figura_atenuador}
+\end{figure}
+
+\section{Questões}
+
+\subsection{Questão 1:}
+Análise os resultados de simulação e compare-os com as previsões teóricas.
+\singlespacing
+
+\textbf{Resolução:}
+
+\singlespacing
+
+\noindent Para o cálculo dos resistores temos as Equações \ref{eqn1} para o cálculo de ruído, onde a Equação \ref{eqn1:1} é referente a figura de ruido do resistor em série e a equação \ref{eqn1:2}, para o paralelo.
+
+
+\begin{subequations}
+\label{eqn1}
+    \begin{equation}
+        F_{s} = 1 + \frac{T_{s}~R_{s}}{T_{0}~R}
+        \label{eqn1:1}
+    \end{equation}
+    \begin{equation}
+        F_{p} = 1 + \frac{T_{p}~R}{T_{0}~R_{p}}
+        \label{eqn1:2}
+    \end{equation}
+\end{subequations}
+
+
+\noindent Substituindo os valores conhecidos, $R=50\Omega$, $R_{s}=120\Omega$, $R_{p}=60\Omega$,$T_{0}=290K$,$T_{s}=303.15K$,$T_{p}=300.15$. Temos os seguintes resultados que coincidem com os obtidos experimentalmente:
+
+\[F_{s} = 5.45 dB ~e~ F_{p} = 2.71 dB\]
+
+\singlespacing
+
+\noindent Para o cálculo teórico da figura de ruído do atenuador foi utilizado a Fórmula de Friss que esta definida na Equação \ref{friss}.
+
+\begin{equation}
+    F = F_{1} + \frac{F_{2}-1}{G_{1}} + \frac{F_{3}-1}{G_{1}G_{2}}
+    \label{friss}
+\end{equation}
+
+\noindent Temos definido que:
+
+\begin{subequations}
+    \begin{equation}
+        F_{1} = 1 + \frac{T_{1}R_{s}}{T_{0}R_{A}}
+    \end{equation}
+    \begin{equation}
+        F_{2} = 1 + \frac{T_{2}R_{B}}{T{0}(R_{s}//R_{A})}
+    \end{equation}
+    \begin{equation}
+        F_{3} = 1 + \frac{T_{3}(R_{B}+(R_{s}//R_{A}))}{T_{0}R_{C}}
+    \end{equation}
+    \begin{equation}
+        G_{1} = \frac{R_{A}}{R_{A}+R_{s}}
+    \end{equation}
+    \begin{equation}
+        G_{2} = \frac{R_{s}//R_{A}}{R_{B}+(R_{s}//R_{A})}
+    \end{equation}
+\end{subequations}
+
+\noindent Temos utilizando as equações com os seguintes valores:
+
+\[R_{A}=R_{C} = 144.44 \Omega ;~R_{B} = 106.63 \Omega; ~ R_{s} = 75 \Omega \]
+\[T_{1} = 293.15K; ~ T_{2} = 303.15K; ~   T_{3} = 300.15K\]
+\[T_{0} = 290K \]
+
+\noindent Temos como resultado $NF_{dB} = 10.14dB$ que coincide com o obtido experimentalmente.
+
+\subsection{Questão 2:}
+Demonstre que a figura de ruído de um atenuador de L dB é igual a L dB
+\singlespacing
+
+\textbf{Resolução:}
+
+\singlespacing
+
+\noindent Como no atenuador temos que as resistências vistas de cada ponto temos que:
+\[N_{i} = N_{o}\]
+
+\noindent O sinal é atenuado em LdB logo temos que.
+
+\[L_{dB} = 10^{\frac{L}{10}} \rightarrow  S_{o} = \frac{S_{i}}{10^{\frac{L}{10}}}\]
+
+\noindent Portanto temos que a figura de ruído é definida por:
+
+\[F = \frac{SNR_{i}}{SNR_{o}} = \frac{S_{i}N_{o}}{N_{i}S_{o}} \]
+
+\noindent Substituindo as definições anteriores temos que:
+
+\[NF = 10log(10^{\frac{L}{10}}) = L_{dB}\]
+
+
+\subsection{Questão 3:}
+Quais as consequências do resultado da questão 2 na escolha de filtros ou conexões a colocar na entrada de receptores de
+RF? (a resposta deve ser adequadamente fundamentada)
+\singlespacing
+
+\textbf{Resolução:}
+
+\singlespacing
+
+\noindent As conexões devem ser altamente casadas, pois, caso contrário, não podemos considerar $N_{i}=N_{o}$, também num sistema real ficaria proibitivo utilizar um atenuador grande no circuito por conta de sua figura de ruido ser proporcional ao seu valor de atenuação, principalmente caso ficasse próximo do primeiro estágio.
+
+\subsection{Questão 4:}
+Disserte sobre o que aprendeu nesta atividade, procurando identificar os pontos que foram acrescentados ao seu repertório
+de conhecimento e suas dificuldades. Seja o mais sincero possível (sobretudo consigo).
+\singlespacing
+
+\textbf{Resolução:}
+
+\singlespacing
+
+\noindent Tive no começo uma dificuldade em lidar com a soma das tensões de ruído, resolvido por se tratar de potências e não de tensões utilizando as expressões para o cálculo.
+
+\noindent Também tive uma dificuldade em saber em como aplicar a Fórmula de Friss para o cálculo da figura de ruído do atenuador, resolvido considerando as variações de impedância para cada componente.
+
+\noindent E no fim tive um problema em retirar os parâmetros corretos, resolvido por adequar as equações e considerar os modelos de Thévenin, para a modelagem do ruído
+
+\subsection{Questão 5:}
+Que sugestões você oferece para tornar esta atividade mais interessante? (Por que não as implementou voluntariamente?).
+
+\singlespacing
+
+\textbf{Resolução:}
+
+\singlespacing
+
+\noindent Possivelmente seria interessante a averiguação de outros tipos de ruído e como eles se interagem no circuito, seria complicado pois o \textit{QUCS} parece não possuir  suporte a estes outros tipos de ruídos, como ruídos flicker e shot.
+
+\section{Conclusão}
+
+Neste relatório, procuramos analisar o efeito dos ruídos nos diversos componentes, e comparamos como os valores que seriam obtidos teoricamente, e como o cálculo da Figura de ruído pode ser importante para a adequação de um projeto que tem como objetivo o baixo ruído, para não afetar o sinal recebido.
+
+\section{Referências}
+
+\nocite{*}
+
+\bibliographystyle{IEEEtran}
+\bibliography{Lab_04}
+
+\end{document}

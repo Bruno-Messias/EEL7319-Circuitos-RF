@@ -5,3 +5,14 @@ Lab03/Experimento/QUCS/cascade_schematic.dat
 Lab03/Experimento/SimSmith/Circuit_Comercial.ssx
 Lab03/Experimento/SimSmith/Circuit_Match.ssx
 Lab03/Experimento/SimSmith/Circuit_Match_v2.ssx
+*.png
+*.bib
+*.zip
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.gz
+*.json
