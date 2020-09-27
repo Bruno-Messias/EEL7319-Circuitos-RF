@@ -16,12 +16,6 @@ Material dos experimentos utilizando o processamento de **Python**, e **QUCS**.
 - [x] Lab 02
 - [x] Lab 03
 - [x] Lab 04
-- [ ] Lab 05
-- [ ] Lab 06
-- [ ] Lab 07
-- [ ] Lab 08
-- [ ] Lab 09
-- [ ] Lab 10
 - [ ] Projeto Final
 
 ---
